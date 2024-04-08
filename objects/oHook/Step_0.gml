@@ -17,9 +17,7 @@ if !grappled and array_length(chainArray) < chainLength-1 {
 	}
 } else if array_length(chainArray) == chainLength-1 {
 	if (point_distance(startPointX,startPointY,chainX,chainY) >= 24) {
-		//show_message("This second statement is read")
-		array_insert(chainArray, 0, instance_create_layer(startPointX,startPointY,"Instances",oChain))
-		physics_joint_revolute_create(oPlayer, chainArray[0],startPointX,startPointY,0,180,true,0,0,false,false)
+		physics_joint_revolute_create(oPlayer, chainArray[0],oPlayer.x,oPlayer.y,0,180,true,0,0,false,false)
 		chains++
 	}
 }
