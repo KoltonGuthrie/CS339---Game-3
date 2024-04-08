@@ -1,14 +1,16 @@
 
 //physics variables
-normalSpeed = 12
+normalSpeed = 6
 normalGravity = 1
-wallSlideFriction = 10
-
-//jumping variables for variable jump height
-jumpSpeed = 15
-jumpHoldFrames = 10
-jumpTimer = 0
 
 //respawn coordinates for checkpoint system
-respawnX = x;
-respawnY = y;
+//respawnX = x;
+//respawnY = y;
+
+// moving vars
+moveLeft = false
+moveRight = false
+jump = false
+crouch = false
+
+phy_fixed_rotation = true
