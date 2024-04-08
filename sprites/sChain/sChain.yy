@@ -1,12 +1,12 @@
 {
   "$GMSprite":"",
   "%Name":"sChain",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":15,
   "bbox_left":0,
   "bbox_right":23,
   "bbox_top":0,
-  "collisionKind":1,
+  "collisionKind":3,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
@@ -14,8 +14,8 @@
   "frames":[
     {"$GMSpriteFrame":"","%Name":"d8620235-73c0-4cc2-821c-dabd810dc4a7","name":"d8620235-73c0-4cc2-821c-dabd810dc4a7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
-  "gridX":0,
-  "gridY":0,
+  "gridX":12,
+  "gridY":8,
   "height":16,
   "HTile":false,
   "layers":[

@@ -41,7 +41,9 @@
   "resources":[
     {"id":{"name":"oBlock","path":"objects/oBlock/oBlock.yy",},},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},},
+    {"id":{"name":"oChain","path":"objects/oChain/oChain.yy",},},
     {"id":{"name":"oCollision","path":"objects/oCollision/oCollision.yy",},},
+    {"id":{"name":"oHook","path":"objects/oHook/oHook.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"oUiButton","path":"objects/oUiButton/oUiButton.yy",},},
     {"id":{"name":"GrappleTestingRoom","path":"rooms/GrappleTestingRoom/GrappleTestingRoom.yy",},},

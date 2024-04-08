@@ -23,6 +23,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"oCamera","order":2,"path":"objects/oCamera/oCamera.yy",},
+    {"name":"oChain","order":1,"path":"objects/oChain/oChain.yy",},
     {"name":"oCollision","order":1,"path":"objects/oCollision/oCollision.yy",},
     {"name":"oUiButton","order":3,"path":"objects/oUiButton/oUiButton.yy",},
     {"name":"GrappleTestingRoom","order":1,"path":"rooms/GrappleTestingRoom/GrappleTestingRoom.yy",},
