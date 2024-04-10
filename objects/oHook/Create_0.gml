@@ -20,7 +20,6 @@ chainY = y
 chainCounter = 0
 
 startModX = x%16
-startPointX = x
-startPointY = y
+grapplingPlayer = -1;
 
 isChainDone = false;

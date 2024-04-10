@@ -4,6 +4,7 @@
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"oStaticParent","path":"objects/oStaticParent/oStaticParent.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"oHook",
@@ -18,7 +19,7 @@
   "physicsDensity":0.5,
   "physicsFriction":0.2,
   "physicsGroup":1,
-  "physicsKinematic":false,
+  "physicsKinematic":true,
   "physicsLinearDamping":0.1,
   "physicsObject":true,
   "physicsRestitution":0.1,
