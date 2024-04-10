@@ -1,6 +1,6 @@
 image_speed = 0
 
-chainLength = 20
+chainLength = 10
 
 chainArray = [self]
 chains = 1
