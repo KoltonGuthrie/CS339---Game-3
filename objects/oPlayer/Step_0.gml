@@ -27,7 +27,14 @@ if jump and place_meeting(x,y+1,oBlock) {
 if(keyboard_check_pressed(ord("G"))) {
 	hook = instance_create_layer(x,y,"Instances", oHook);
 	with(hook) {
-		physics_apply_force(x,y,4,4);
+		physics_apply_impulse(x,y,150,-150);
+		grapplingPlayer = other;
+	}
+}
+
+if keyboard_check_pressed(ord("Z")) {
+	hook = instance_create_layer(x,y,"Instances", oHook);
+	with(hook) {
 		grapplingPlayer = other;
 	}
 }

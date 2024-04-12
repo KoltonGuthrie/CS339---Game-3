@@ -10,8 +10,8 @@ chainSize = 24
 
 //direction = 0
 //phy_rotation = direction
-phy_speed_y = -6
-phy_speed_x = 6
+//phy_speed_y = -6
+//aphy_speed_x = 6
 chainDirection = direction
 chainSpeed = speed
 
