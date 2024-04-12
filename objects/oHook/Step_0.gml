@@ -1,4 +1,4 @@
-if(instance_exists(grapplingPlayer)) {
+if(instance_exists(grapplingPlayer) && instance_exists(chainArray[0])) {
 
 	// readjusts angle for newly spawned chains
 	//chainDirection = point_direction(grapplingPlayer.x, grapplingPlayer.y,x,y)

@@ -24,13 +24,27 @@ if jump and place_meeting(x,y+1,oBlock) {
 	physics_apply_impulse(x,y,0,-550)
 }
 
-if(keyboard_check(ord("G"))) {
+if(keyboard_check(ord("G")) && !isGrappled) {
 	isGrappleBeingHeld = true;
 	if(!instance_exists(grappleDirectionObj)) {
 		grappleDirectionObj = instance_create_layer(x,y,"Instances", oGrappleDirection);
 	}
 	grappleDirectionObj.x = x;
 	grappleDirectionObj.y = y;
+}
+
+if(keyboard_check_pressed(ord("G")) && isGrappled) {
+	with(hook) {
+		if(grapplingPlayer == other) {
+			for(i = 0; i < array_length(chainArray); i++) {
+				instance_destroy(chainArray[i]);	
+			}
+		}
+	}
+}
+
+if(keyboard_check_released(ord("G")) && isGrappled) {
+	isGrappled = false;
 }
 
 if(keyboard_check_released(ord("G")) && isGrappleBeingHeld) {
@@ -49,6 +63,7 @@ if(keyboard_check_released(ord("G")) && isGrappleBeingHeld) {
 	}
 	if(instance_exists(grappleDirectionObj)) instance_destroy(grappleDirectionObj);
 	grappleDirectionObj = noone;
+	isGrappled = true;
 }
 
 
