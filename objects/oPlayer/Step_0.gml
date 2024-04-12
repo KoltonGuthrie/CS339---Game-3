@@ -64,6 +64,7 @@ if(keyboard_check_released(ord("G")) && isGrappleBeingHeld) {
 	if(instance_exists(grappleDirectionObj)) instance_destroy(grappleDirectionObj);
 	grappleDirectionObj = noone;
 	isGrappled = true;
+	grappleThrowingRotation = 0;
 }
 
 
