@@ -4,16 +4,16 @@ moveRight = keyboard_check_direct(ord("D"))
 jump = keyboard_check_direct(ord("W"))
 crouch = keyboard_check_direct(ord("S"))
 
-if moveLeft {
+if moveLeft and phy_speed_x > -5 {
 	//phy_speed_x = -normalSpeed;
 	//physics_apply_force(x,y, -600, 0)
-	physics_apply_impulse(x,y,-20,0)
+	physics_apply_impulse(x,y,-50,0)
 }
 
-if moveRight {
+if moveRight and phy_speed_x < 5 {
 	//phy_speed_x = normalSpeed;
 	//physics_apply_force(x,y, 600, 0)
-	physics_apply_impulse(x,y,20,0)
+	physics_apply_impulse(x,y,50,0)
 }
 
 if (!moveLeft and !moveRight) {
@@ -27,7 +27,7 @@ if jump and place_meeting(x,y+1,oBlock) {
 if(keyboard_check_pressed(ord("G"))) {
 	hook = instance_create_layer(x,y,"Instances", oHook);
 	with(hook) {
-		physics_apply_force(x,y,2,2);
+		physics_apply_force(x,y,4,4);
 		grapplingPlayer = other;
 	}
 }

@@ -1,6 +1,6 @@
 image_speed = 0
 
-chainLength = 10
+chainLength = 12
 
 chainArray = [self]
 chains = 1
@@ -10,8 +10,8 @@ chainSize = 24
 
 //direction = 0
 //phy_rotation = direction
-phy_speed_y = -4
-phy_speed_x = 4
+phy_speed_y = -6
+phy_speed_x = 6
 chainDirection = direction
 chainSpeed = speed
 
