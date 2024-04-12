@@ -21,6 +21,7 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"oWheel","order":1,"path":"objects/oWheel/oWheel.yy",},
     {"name":"oCamera","order":2,"path":"objects/oCamera/oCamera.yy",},
     {"name":"oChain","order":1,"path":"objects/oChain/oChain.yy",},
     {"name":"oCollision","order":1,"path":"objects/oCollision/oCollision.yy",},

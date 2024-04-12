@@ -39,6 +39,7 @@
   },
   "name":"Game 3",
   "resources":[
+    {"id":{"name":"oWheel","path":"objects/oWheel/oWheel.yy",},},
     {"id":{"name":"oBlock","path":"objects/oBlock/oBlock.yy",},},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},},
     {"id":{"name":"oChain","path":"objects/oChain/oChain.yy",},},
@@ -55,6 +56,7 @@
     {"id":{"name":"sHook","path":"sprites/sHook/sHook.yy",},},
     {"id":{"name":"sPlayer1","path":"sprites/sPlayer1/sPlayer1.yy",},},
     {"id":{"name":"sGrappleDirection","path":"sprites/sGrappleDirection/sGrappleDirection.yy",},},
+    {"id":{"name":"sWheel","path":"sprites/sWheel/sWheel.yy",},},
     {"id":{"name":"Test_Background","path":"sprites/Test_Background/Test_Background.yy",},},
     {"id":{"name":"Test_Block","path":"sprites/Test_Block/Test_Block.yy",},},
   ],

@@ -29,7 +29,6 @@ if(keyboard_check(ord("G"))) {
 	if(!instance_exists(grappleDirectionObj)) {
 		grappleDirectionObj = instance_create_layer(x,y,"Instances", oGrappleDirection);
 	}
-	show_debug_message("E");
 	grappleDirectionObj.x = x;
 	grappleDirectionObj.y = y;
 }

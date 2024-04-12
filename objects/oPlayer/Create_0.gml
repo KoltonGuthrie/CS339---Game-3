@@ -14,6 +14,7 @@ jump = false
 crouch = false
 
 isGrappleBeingHeld = false;
+isGrappled = false;
 grappleThrowingRotation = 0;
 grappleDirectionObj = noone;
 
