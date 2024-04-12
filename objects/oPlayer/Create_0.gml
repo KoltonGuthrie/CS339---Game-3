@@ -13,4 +13,8 @@ moveRight = false
 jump = false
 crouch = false
 
+isGrappleBeingHeld = false;
+grappleThrowingRotation = 0;
+grappleDirectionObj = noone;
+
 phy_fixed_rotation = true

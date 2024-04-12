@@ -13,7 +13,6 @@ if(instance_exists(grapplingPlayer)) {
 		//show_message("This first statement is read")
 		if (point_distance(grapplingPlayer.x,grapplingPlayer.y,chainX,chainY) >= 24) {
 			//show_message("This second statement is read")
-			show_debug_message("MADE ROPE")
 			array_insert(chainArray, 0, instance_create_layer(grapplingPlayer.x,grapplingPlayer.y,"Instances",oChain))
 			physics_joint_rope_create(chainArray[1], chainArray[0], chainArray[1].x, chainArray[1].y, chainArray[0].x + 24, chainArray[0].y, 12, false)
 			chains++

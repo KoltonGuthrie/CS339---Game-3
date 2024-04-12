@@ -24,12 +24,45 @@ if jump and place_meeting(x,y+1,oBlock) {
 	physics_apply_impulse(x,y,0,-550)
 }
 
-if(keyboard_check_pressed(ord("G"))) {
-	hook = instance_create_layer(x,y,"Instances", oHook);
-	with(hook) {
-		physics_apply_force(x,y,4,4);
-		grapplingPlayer = other;
+if(keyboard_check(ord("G"))) {
+	isGrappleBeingHeld = true;
+	if(!instance_exists(grappleDirectionObj)) {
+		grappleDirectionObj = instance_create_layer(x,y,"Instances", oGrappleDirection);
 	}
+	show_debug_message("E");
+	grappleDirectionObj.x = x;
+	grappleDirectionObj.y = y;
 }
 
-//if place_meeting(x, )
+if(keyboard_check_released(ord("G")) && isGrappleBeingHeld) {
+	isGrappleBeingHeld = false;
+	
+	hook = instance_create_layer(x,y,"Instances", oHook);
+	with(hook) {
+		
+		force_x = lengthdir_x(10,other.grappleThrowingRotation);
+		force_y = lengthdir_y(10,other.grappleThrowingRotation);
+
+		phy_speed_x = force_x;
+		phy_speed_y = force_y;
+
+		grapplingPlayer = other;
+	}
+	if(instance_exists(grappleDirectionObj)) instance_destroy(grappleDirectionObj);
+	grappleDirectionObj = noone;
+}
+
+
+if(isGrappleBeingHeld) {
+	if(grappleThrowingRotation >= 360) grappleThrowingRotation = 0;
+	grappleThrowingRotation += 3;
+	
+	if(instance_exists(grappleDirectionObj)) {
+		grappleDirectionObj.image_angle = grappleThrowingRotation;
+	} else {
+		obj = instance_create_layer(x,y,"Instances", oGrappleDirection);
+		obj.image_angle = grappleThrowingRotation;
+		grappleDirectionObj = obj;
+	}
+	
+}
