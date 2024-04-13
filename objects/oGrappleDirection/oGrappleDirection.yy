@@ -6,8 +6,8 @@
   "name":"oGrappleDirection",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Grapple",
+    "path":"folders/Objects/Grapple.yy",
   },
   "parentObjectId":null,
   "persistent":false,
