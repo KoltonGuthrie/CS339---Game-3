@@ -23,7 +23,6 @@
   "ResourceOrderSettings":[
     {"name":"oCamera","order":2,"path":"objects/oCamera/oCamera.yy",},
     {"name":"oChain","order":1,"path":"objects/oChain/oChain.yy",},
-    {"name":"oCollision","order":1,"path":"objects/oCollision/oCollision.yy",},
     {"name":"oDynamicParent","order":6,"path":"objects/oDynamicParent/oDynamicParent.yy",},
     {"name":"oGrappleDirection","order":2,"path":"objects/oGrappleDirection/oGrappleDirection.yy",},
     {"name":"oPlayer2","order":8,"path":"objects/oPlayer2/oPlayer2.yy",},
