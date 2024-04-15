@@ -20,6 +20,10 @@ chainY = y
 chainCounter = 0
 
 startModX = x%16
-grapplingPlayer = -1;
+grapplingPlayer = pointer_null;
 
 isChainDone = false;
+
+grappleReady = false;
+notGrappled = true;
+alarm[0] = 0.25*room_speed;

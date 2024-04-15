@@ -1,8 +1,8 @@
 // Controls
-moveLeft = keyboard_check_direct(ord("A"))
-moveRight = keyboard_check_direct(ord("D"))
-jump = keyboard_check_direct(ord("W"))
-crouch = keyboard_check_direct(ord("S"))
+moveLeft = keyboard_check_direct(vk_left)
+moveRight = keyboard_check_direct(vk_right)
+jump = keyboard_check_direct(vk_up)
+crouch = keyboard_check_direct(vk_down)
 
 if moveLeft and phy_speed_x > -5 {
 	//phy_speed_x = -normalSpeed;
@@ -24,7 +24,7 @@ if jump and place_meeting(x,y+1,oBlock) {
 	physics_apply_impulse(x,y,0,-550)
 }
 
-if(keyboard_check(ord("G")) && !isGrappled) {
+if(keyboard_check(ord("L")) && !isGrappled) {
 	isGrappleBeingHeld = true;
 	if(!instance_exists(grappleDirectionObj)) {
 		grappleDirectionObj = instance_create_layer(x,y,"Instances", oGrappleDirection);
@@ -33,7 +33,7 @@ if(keyboard_check(ord("G")) && !isGrappled) {
 	grappleDirectionObj.y = y;
 }
 
-if(keyboard_check_pressed(ord("G")) && isGrappled) {
+if(keyboard_check_pressed(ord("L")) && isGrappled) {
 	with(hook) {
 		if(grapplingPlayer == other) {
 			for(i = 0; i < array_length(chainArray); i++) {
@@ -43,11 +43,11 @@ if(keyboard_check_pressed(ord("G")) && isGrappled) {
 	}
 }
 
-if(keyboard_check_released(ord("G")) && isGrappled) {
+if(keyboard_check_released(ord("L")) && isGrappled) {
 	isGrappled = false;
 }
 
-if(keyboard_check_released(ord("G")) && isGrappleBeingHeld) {
+if(keyboard_check_released(ord("L")) && isGrappleBeingHeld) {
 	isGrappleBeingHeld = false;
 	
 	hook = instance_create_layer(x,y,"Instances", oHook);

@@ -19,7 +19,7 @@ if(instance_exists(grapplingPlayer) && instance_exists(chainArray[0])) {
 		}
 	} else if array_length(chainArray) == chainLength-1 {
 		if (point_distance(grapplingPlayer.x,grapplingPlayer.y,chainX,chainY) >= 24) {
-			physics_joint_rope_create(chainArray[0], oPlayer, chainArray[0].x, chainArray[0].y, oPlayer.x, oPlayer.y, 3, false)
+			physics_joint_rope_create(chainArray[0], grapplingPlayer, chainArray[0].x, chainArray[0].y, grapplingPlayer.x, grapplingPlayer.y, 3, false)
 			chains++
 		}
 	}

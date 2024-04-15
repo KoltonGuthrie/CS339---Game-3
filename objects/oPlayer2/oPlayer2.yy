@@ -1,21 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"oPlayer",
+  "%Name":"oPlayer2",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":79,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oPlayer",
+  "name":"oPlayer2",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
   "parentObjectId":{
-    "name":"oDynamicParent",
-    "path":"objects/oDynamicParent/oDynamicParent.yy",
+    "name":"oStaticParent",
+    "path":"objects/oStaticParent/oStaticParent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -40,8 +40,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPlayer1",
-    "path":"sprites/sPlayer1/sPlayer1.yy",
+    "name":"sPlayer2",
+    "path":"sprites/sPlayer2/sPlayer2.yy",
   },
   "spriteMaskId":null,
   "visible":true,
