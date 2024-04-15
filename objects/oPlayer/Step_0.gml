@@ -1,7 +1,7 @@
 // Controls
 moveLeft = keyboard_check_direct(ord("A"))
 moveRight = keyboard_check_direct(ord("D"))
-jump = keyboard_check_direct(ord("W"))
+//jump = keyboard_check_direct(ord("W"))
 crouch = keyboard_check_direct(ord("S"))
 
 if moveLeft and phy_speed_x > -5 {
@@ -20,8 +20,13 @@ if (!moveLeft and !moveRight) {
 	//phy_speed_x = 0	
 }
 
-if jump and place_meeting(x,y+1,oBlock) {
-	physics_apply_impulse(x,y,0,-550)
+if keyboard_check_pressed(ord("W")) and place_meeting(x, y+normalGravity, oStaticParent){
+	jumpTimer = jumpHoldFrames    
+	}
+	if keyboard_check_released(ord("W")) {jumpTimer = 0}
+	if jumpTimer > 0 and !place_meeting(x, y-jumpSpeed, oStaticParent){
+	      phy_speed_y = -jumpSpeed      
+	      jumpTimer--
 }
 
 if(keyboard_check(ord("G")) && !isGrappled) {
@@ -34,7 +39,7 @@ if(keyboard_check(ord("G")) && !isGrappled) {
 }
 
 if(keyboard_check_pressed(ord("G")) && isGrappled) {
-	with(hook) {
+	with(oHook) {
 		if(grapplingPlayer == other) {
 			for(i = 0; i < array_length(chainArray); i++) {
 				instance_destroy(chainArray[i]);	
@@ -53,8 +58,8 @@ if(keyboard_check_released(ord("G")) && isGrappleBeingHeld) {
 	hook = instance_create_layer(x,y,"Instances", oHook);
 	with(hook) {
 		
-		force_x = lengthdir_x(10,other.grappleThrowingRotation);
-		force_y = lengthdir_y(10,other.grappleThrowingRotation);
+		force_x = lengthdir_x(13,other.grappleThrowingRotation);
+		force_y = lengthdir_y(13,other.grappleThrowingRotation);
 
 		phy_speed_x = force_x;
 		phy_speed_y = force_y;
