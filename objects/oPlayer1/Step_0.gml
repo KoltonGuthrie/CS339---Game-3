@@ -14,6 +14,8 @@ if moveLeft and phy_speed_x > -5 {
 	}
 }
 
+
+
 if moveRight and phy_speed_x < 5 {
 	//phy_speed_x = normalSpeed;
 	//physics_apply_force(x,y, 600, 0)
@@ -38,7 +40,7 @@ if crouch and place_meeting(x,y+1,oBlock) {
 	phy_speed_y = 0
 }
 
-if jump and place_meeting(x,y+1,oBlock) {
+if jump and place_meeting(x-20,y+1,oBlock) and place_meeting(x+20,y+1,oBlock) {
 	physics_apply_impulse(x,y,0,-50*phy_mass)
 }
 
@@ -68,7 +70,7 @@ if(keyboard_check_released(ord("G")) && isGrappled) {
 if(keyboard_check_released(ord("G")) && isGrappleBeingHeld) {
 	isGrappleBeingHeld = false;
 	
-	hook = instance_create_layer(x,y,"Instances", oHook);
+	var hook = instance_create_layer(x,y,"Instances", oHook);
 	with(hook) {
 		
 		force_x = lengthdir_x(10,other.grappleThrowingRotation);
@@ -96,7 +98,7 @@ if(isGrappleBeingHeld) {
 	if(instance_exists(grappleDirectionObj)) {
 		grappleDirectionObj.image_angle = grappleThrowingRotation;
 	} else {
-		obj = instance_create_layer(x,y,"Instances", oGrappleDirection);
+		var obj = instance_create_layer(x,y,"Instances", oGrappleDirection);
 		obj.image_angle = grappleThrowingRotation;
 		grappleDirectionObj = obj;
 	}
