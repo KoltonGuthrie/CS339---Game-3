@@ -6,13 +6,13 @@ crouch = keyboard_check_direct(vk_down)
 if moveLeft and phy_speed_x > -5 {
 	//phy_speed_x = -normalSpeed;
 	//physics_apply_force(x,y, -600, 0)
-	physics_apply_impulse(x,y,-50,0)
+	physics_apply_impulse(x,y,-500,0)
 }
 
 if moveRight and phy_speed_x < 5 {
 	//phy_speed_x = normalSpeed;
 	//physics_apply_force(x,y, 600, 0)
-	physics_apply_impulse(x,y,50,0)
+	physics_apply_impulse(x,y,500,0)
 }
 
 if (!moveLeft and !moveRight) {
