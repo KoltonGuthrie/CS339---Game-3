@@ -19,3 +19,5 @@ grappleThrowingRotation = 0;
 grappleDirectionObj = noone;
 
 phy_fixed_rotation = true
+
+defaultFriction = friction
