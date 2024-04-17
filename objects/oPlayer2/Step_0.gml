@@ -19,10 +19,10 @@ if (!moveLeft and !moveRight) {
 	//phy_speed_x = 0	
 }
 
-if keyboard_check_pressed(ord("W")) and place_meeting(x, y+normalGravity, oStaticParent){
+if keyboard_check_pressed(vk_up) and place_meeting(x, y+normalGravity, oStaticParent){
 	jumpTimer = jumpHoldFrames    
 	}
-	if keyboard_check_released(ord("W")) {jumpTimer = 0}
+	if keyboard_check_released(vk_up) {jumpTimer = 0}
 	if jumpTimer > 0 and !place_meeting(x, y-jumpSpeed, oStaticParent){
 	      phy_speed_y = -jumpSpeed      
 	      jumpTimer--
