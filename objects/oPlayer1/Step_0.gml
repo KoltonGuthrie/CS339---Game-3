@@ -7,21 +7,39 @@ crouch = keyboard_check_direct(ord("S"))
 if moveLeft and phy_speed_x > -5 {
 	//phy_speed_x = -normalSpeed;
 	//physics_apply_force(x,y, -600, 0)
-	physics_apply_impulse(x,y,-50,0)
+	physics_apply_impulse(x,y,-5*phy_mass,0)
+	if place_meeting(x,y+1,oBlock) {
+		sprite_index = sPlayer1Walking
+		image_xscale = -1
+	}
 }
 
 if moveRight and phy_speed_x < 5 {
 	//phy_speed_x = normalSpeed;
 	//physics_apply_force(x,y, 600, 0)
-	physics_apply_impulse(x,y,50,0)
+	physics_apply_impulse(x,y,5*phy_mass,0)
+	if place_meeting(x,y+1,oBlock) {
+		image_xscale = 1
+		sprite_index = sPlayer1Walking
+	}
+}
+
+if !place_meeting(x,y+1,oBlock) {
+	sprite_index = sPlayer1
 }
 
 if (!moveLeft and !moveRight) {
 	//phy_speed_x = 0	
+	sprite_index = sPlayer1
+}
+
+if crouch and place_meeting(x,y+1,oBlock) {
+	phy_speed_x = 0
+	phy_speed_y = 0
 }
 
 if jump and place_meeting(x,y+1,oBlock) {
-	physics_apply_impulse(x,y,0,-550)
+	physics_apply_impulse(x,y,0,-50*phy_mass)
 }
 
 if(keyboard_check(ord("G")) && !isGrappled) {
