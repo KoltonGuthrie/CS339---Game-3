@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oBlock",
+  "%Name":"oBlockEarth",
   "eventList":[],
   "managed":true,
-  "name":"oBlock",
+  "name":"oBlockEarth",
   "overriddenProperties":[],
   "parent":{
     "name":"Environment",
@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"sTopLayerBlock",
-    "path":"sprites/sTopLayerBlock/sTopLayerBlock.yy",
+    "name":"Test_Block",
+    "path":"sprites/Test_Block/Test_Block.yy",
   },
   "spriteMaskId":null,
   "visible":true,
