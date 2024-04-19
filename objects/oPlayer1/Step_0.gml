@@ -54,13 +54,16 @@ if(keyboard_check(ord("G")) && !isGrappled) {
 }
 
 if(keyboard_check_pressed(ord("G")) && isGrappled) {
-	with(hook) {
-		if(grapplingPlayer == other) {
-			for(i = 0; i < array_length(chainArray); i++) {
-				instance_destroy(chainArray[i]);	
+	if instance_exists(hook) {
+		with(hook) {
+			if(grapplingPlayer == other) {
+				for(i = 0; i < array_length(chainArray); i++) {
+					instance_destroy(chainArray[i]);	
+				}
 			}
 		}
 	}
+	//instance_destroy(hook.chainArray)
 }
 
 if(keyboard_check_released(ord("G")) && isGrappled) {
@@ -70,7 +73,7 @@ if(keyboard_check_released(ord("G")) && isGrappled) {
 if(keyboard_check_released(ord("G")) && isGrappleBeingHeld) {
 	isGrappleBeingHeld = false;
 	
-	var hook = instance_create_layer(x,y,"Instances", oHook);
+	hook = instance_create_layer(x,y,"Instances", oHook);
 	with(hook) {
 		
 		force_x = lengthdir_x(10,other.grappleThrowingRotation);
