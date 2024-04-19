@@ -1,4 +1,4 @@
-Bs// Controls
+// Controls
 moveLeft = keyboard_check_direct(vk_left)
 moveRight = keyboard_check_direct(vk_right)
 jump = keyboard_check_direct(vk_up)
