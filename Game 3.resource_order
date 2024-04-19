@@ -16,11 +16,16 @@
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"Environment","order":2,"path":"folders/Sprites/Environment.yy",},
     {"name":"Grapple","order":1,"path":"folders/Sprites/Grapple.yy",},
+    {"name":"Background Layers","order":5,"path":"folders/Sprites/Background Layers.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
+<<<<<<< HEAD
     {"name":"oCheckpoint2","order":10,"path":"objects/oCheckpoint2/oCheckpoint2.yy",},
+=======
+    {"name":"oBlockEarth","order":2,"path":"objects/oBlockEarth/oBlockEarth.yy",},
+>>>>>>> 3945fe6939677a7e9035fe94192644bf811480ef
     {"name":"oCamera","order":2,"path":"objects/oCamera/oCamera.yy",},
     {"name":"oChain","order":1,"path":"objects/oChain/oChain.yy",},
     {"name":"oCheckpoint1","order":9,"path":"objects/oCheckpoint1/oCheckpoint1.yy",},
@@ -32,8 +37,16 @@
     {"name":"oWheel","order":1,"path":"objects/oWheel/oWheel.yy",},
     {"name":"GrappleTestingRoom","order":1,"path":"rooms/GrappleTestingRoom/GrappleTestingRoom.yy",},
     {"name":"NewGrappleTestingRoom","order":3,"path":"rooms/NewGrappleTestingRoom/NewGrappleTestingRoom.yy",},
+<<<<<<< HEAD
     {"name":"checkpoint1","order":5,"path":"sprites/checkpoint1/checkpoint1.yy",},
     {"name":"checkpoint2","order":6,"path":"sprites/checkpoint2/checkpoint2.yy",},
+=======
+    {"name":"Background_1","order":1,"path":"sprites/Background_1/Background_1.yy",},
+    {"name":"Background_2","order":2,"path":"sprites/Background_2/Background_2.yy",},
+    {"name":"Background_3","order":3,"path":"sprites/Background_3/Background_3.yy",},
+    {"name":"Background_4","order":4,"path":"sprites/Background_4/Background_4.yy",},
+    {"name":"Background_5","order":5,"path":"sprites/Background_5/Background_5.yy",},
+>>>>>>> 3945fe6939677a7e9035fe94192644bf811480ef
     {"name":"sChain","order":1,"path":"sprites/sChain/sChain.yy",},
     {"name":"sGrappleDirection","order":2,"path":"sprites/sGrappleDirection/sGrappleDirection.yy",},
     {"name":"sPlayer1Sliding","order":4,"path":"sprites/sPlayer1Sliding/sPlayer1Sliding.yy",},
@@ -44,5 +57,6 @@
     {"name":"Sprite10","order":2,"path":"sprites/Sprite10/Sprite10.yy",},
     {"name":"Test_Background","order":3,"path":"sprites/Test_Background/Test_Background.yy",},
     {"name":"Test_Block","order":4,"path":"sprites/Test_Block/Test_Block.yy",},
+    {"name":"sTopLayerBlock","order":6,"path":"sprites/sTopLayerBlock/sTopLayerBlock.yy",},
   ],
 }
