@@ -3,29 +3,45 @@ moveLeft = keyboard_check_direct(vk_left)
 moveRight = keyboard_check_direct(vk_right)
 jump = keyboard_check_direct(vk_up)
 crouch = keyboard_check_direct(vk_down)
+
 if moveLeft and phy_speed_x > -5 {
 	//phy_speed_x = -normalSpeed;
 	//physics_apply_force(x,y, -600, 0)
-	physics_apply_impulse(x,y,-500,0)
+	physics_apply_impulse(x,y,-5*phy_mass,0)
+	if place_meeting(x,y+1,oBlock) {
+		sprite_index = sPlayer2Walking
+		image_xscale = -1
+	}
 }
+
+
 
 if moveRight and phy_speed_x < 5 {
 	//phy_speed_x = normalSpeed;
 	//physics_apply_force(x,y, 600, 0)
-	physics_apply_impulse(x,y,500,0)
+	physics_apply_impulse(x,y,5*phy_mass,0)
+	if place_meeting(x,y+1,oBlock) {
+		image_xscale = 1
+		sprite_index = sPlayer2Walking
+	}
+}
+
+if !place_meeting(x,y+1,oBlock) {
+	sprite_index = sPlayer2
 }
 
 if (!moveLeft and !moveRight) {
 	//phy_speed_x = 0	
+	sprite_index = sPlayer2
 }
 
-if keyboard_check_pressed(vk_up) and place_meeting(x, y+normalGravity, oStaticParent){
-	jumpTimer = jumpHoldFrames    
-	}
-	if keyboard_check_released(vk_up) {jumpTimer = 0}
-	if jumpTimer > 0 and !place_meeting(x, y-jumpSpeed, oStaticParent){
-	      phy_speed_y = -jumpSpeed      
-	      jumpTimer--
+if crouch and place_meeting(x,y+1,oBlock) {
+	phy_speed_x = 0
+	phy_speed_y = 0
+}
+
+if jump and place_meeting(x-20,y+1,oBlock) and place_meeting(x+20,y+1,oBlock) {
+	physics_apply_impulse(x,y,0,-50*phy_mass)
 }
 
 if(keyboard_check(ord("L")) && !isGrappled) {
@@ -38,13 +54,16 @@ if(keyboard_check(ord("L")) && !isGrappled) {
 }
 
 if(keyboard_check_pressed(ord("L")) && isGrappled) {
-	with(hook) {
-		if(grapplingPlayer == other) {
-			for(i = 0; i < array_length(chainArray); i++) {
-				instance_destroy(chainArray[i]);	
+	if instance_exists(hook) {
+		with(hook) {
+			if(grapplingPlayer == other) {
+				for(i = 0; i < array_length(chainArray); i++) {
+					instance_destroy(chainArray[i]);	
+				}
 			}
 		}
 	}
+	//instance_destroy(hook.chainArray)
 }
 
 if(keyboard_check_released(ord("L")) && isGrappled) {
@@ -57,8 +76,11 @@ if(keyboard_check_released(ord("L")) && isGrappleBeingHeld) {
 	hook = instance_create_layer(x,y,"Instances", oHook);
 	with(hook) {
 		
-		force_x = lengthdir_x(13,other.grappleThrowingRotation);
-		force_y = lengthdir_y(13,other.grappleThrowingRotation);
+		force_x = lengthdir_x(10,other.grappleThrowingRotation);
+		force_y = lengthdir_y(10,other.grappleThrowingRotation);
+		
+		phy_position_x += force_x;
+		phy_position_y += force_y;
 
 		phy_speed_x = force_x;
 		phy_speed_y = force_y;
@@ -79,7 +101,7 @@ if(isGrappleBeingHeld) {
 	if(instance_exists(grappleDirectionObj)) {
 		grappleDirectionObj.image_angle = grappleThrowingRotation;
 	} else {
-		obj = instance_create_layer(x,y,"Instances", oGrappleDirection);
+		var obj = instance_create_layer(x,y,"Instances", oGrappleDirection);
 		obj.image_angle = grappleThrowingRotation;
 		grappleDirectionObj = obj;
 	}

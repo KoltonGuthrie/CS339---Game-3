@@ -20,7 +20,7 @@ chainY = y
 chainCounter = 0
 
 startModX = x%16
-grapplingPlayer = oPlayer1;
+grapplingPlayer = pointer_null;
 
 isChainDone = false;
 

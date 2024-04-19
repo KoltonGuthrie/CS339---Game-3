@@ -20,6 +20,6 @@ grappleDirectionObj = noone;
 
 phy_fixed_rotation = true
 
-jumpSpeed = 7
-jumpHoldFrames = 10
-jumpTimer = 0
+defaultFriction = friction
+
+hook = noone
