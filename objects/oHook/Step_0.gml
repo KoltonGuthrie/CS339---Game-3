@@ -28,6 +28,7 @@ if(instance_exists(grapplingPlayer) && instance_exists(chainArray[0])) {
 		if (point_distance(grapplingPlayer.x,grapplingPlayer.y,chainX,chainY) >= 24) {
 			physics_joint_rope_create(chainArray[0], grapplingPlayer, chainArray[0].x, chainArray[0].y, grapplingPlayer.x, grapplingPlayer.y, 3, false)
 			chains++
+			physics_joint_rope_create(self, grapplingPlayer, self.x, self.y, grapplingPlayer.x, grapplingPlayer.y, 35 * chains, false)
 		}
 	}
 }
