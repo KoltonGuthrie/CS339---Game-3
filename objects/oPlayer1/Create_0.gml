@@ -23,3 +23,5 @@ phy_fixed_rotation = true
 defaultFriction = friction
 
 hook = noone
+p1CheckpointX = phy_position_x
+p1CheckpointY = phy_position_y
