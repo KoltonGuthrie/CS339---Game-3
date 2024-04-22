@@ -165,7 +165,7 @@
   },
   "sequenceId":null,
   "views":[
-    {"hborder":1000,"hport":1152,"hspeed":-1,"hview":768,"inherit":false,"objectId":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},"vborder":500,"visible":true,"vspeed":-1,"wport":2049,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
+    {"hborder":1000,"hport":2304,"hspeed":-1,"hview":1152,"inherit":false,"objectId":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},"vborder":500,"visible":true,"vspeed":-1,"wport":4098,"wview":2049,"xport":0,"xview":0,"yport":0,"yview":0,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
     {"hborder":32,"hport":768,"hspeed":-1,"hview":768,"inherit":false,"objectId":null,"vborder":32,"visible":false,"vspeed":-1,"wport":1366,"wview":1366,"xport":0,"xview":0,"yport":0,"yview":0,},
