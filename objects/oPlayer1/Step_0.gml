@@ -40,7 +40,7 @@ if crouch and place_meeting(x,y+1,oBlock) {
 	phy_speed_y = 0
 }
 
-if jump and (place_meeting(x-12,y+1,oBlock) and place_meeting(x+12,y+1,oBlock)) {
+if jump and (place_meeting(x,y+1,oBlock) or place_meeting(x-60,y+1,oBlock)) {
 	physics_apply_impulse(x,y,0,-65*phy_mass)
 }
 
