@@ -20,7 +20,7 @@ if moveRight and phy_speed_x < 5 {
 	//phy_speed_x = normalSpeed;
 	//physics_apply_force(x,y, 600, 0)
 	physics_apply_impulse(x,y,5*phy_mass,0)
-	if place_meeting(x,y+1,oBlock) {
+	if place_meeting(x,y+1,oStaticParent) {
 		image_xscale = 1
 		sprite_index = sPlayer1Walking
 	}
@@ -35,13 +35,28 @@ if (!moveLeft and !moveRight) {
 	sprite_index = sPlayer1
 }
 
-if crouch and place_meeting(x,y+1,oBlock) {
+if crouch and place_meeting(x,y+1,oStaticParent) {
 	phy_speed_x = 0
 	phy_speed_y = 0
 }
 
-if jump and (place_meeting(x-10,y+1,oBlock) or place_meeting(x-60,y+1,oBlock)) {
+//airborne test
+
+if place_meeting(x,y+1,oStaticParent) {
+	jumpBuffer = 0
+}
+
+
+
+if jump and !jumpCooldown and jumpBuffer < 2 {
 	physics_apply_impulse(x,y,0,-65*phy_mass)
+	jumpCooldown = true
+	jumpBuffer += 1
+	if isGrappled {
+		alarm[0] = room_speed*4
+	} else {
+		alarm[0] = room_speed
+	}
 }
 
 if(keyboard_check(ord("G")) && !isGrappled) {

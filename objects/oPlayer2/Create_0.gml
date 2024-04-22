@@ -25,3 +25,6 @@ defaultFriction = friction
 hook = noone
 p2CheckpointX = phy_position_x
 p2CheckpointY = phy_position_y
+
+jumpCooldown = false
+jumpBuffer = 0

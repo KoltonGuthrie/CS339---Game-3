@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"Test_Block",
-    "path":"sprites/Test_Block/Test_Block.yy",
+    "name":"sEarth",
+    "path":"sprites/sEarth/sEarth.yy",
   },
   "spriteMaskId":null,
   "visible":true,
