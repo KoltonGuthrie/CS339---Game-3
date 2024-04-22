@@ -40,11 +40,11 @@ if crouch and place_meeting(x,y+1,oBlock) {
 	phy_speed_y = 0
 }
 
-if jump and place_meeting(x-20,y+1,oBlock) and place_meeting(x+20,y+1,oBlock) {
-	physics_apply_impulse(x,y,0,-50*phy_mass)
+if jump and place_meeting(x-12,y+1,oBlock) and place_meeting(x+12,y+1,oBlock) {
+	physics_apply_impulse(x,y,0,-65*phy_mass)
 }
 
-if(keyboard_check(ord("L")) && !isGrappled) {
+if(keyboard_check(ord("L")) or keyboard_check_pressed(ord("O")) && !isGrappled) {
 	isGrappleBeingHeld = true;
 	if(!instance_exists(grappleDirectionObj)) {
 		grappleDirectionObj = instance_create_layer(x,y,"Instances", oGrappleDirection);
@@ -76,8 +76,8 @@ if(keyboard_check_released(ord("L")) && isGrappleBeingHeld) {
 	hook = instance_create_layer(x,y,"Instances", oHook);
 	with(hook) {
 		
-		force_x = lengthdir_x(10,other.grappleThrowingRotation);
-		force_y = lengthdir_y(10,other.grappleThrowingRotation);
+		force_x = lengthdir_x(15,other.grappleThrowingRotation);
+		force_y = lengthdir_y(15,other.grappleThrowingRotation);
 		
 		phy_position_x += force_x;
 		phy_position_y += force_y;
