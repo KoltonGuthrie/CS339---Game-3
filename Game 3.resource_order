@@ -2,5 +2,6 @@
   "FolderOrderSettings":[],
   "ResourceOrderSettings":[
     {"name":"oScroller","order":1,"path":"objects/oScroller/oScroller.yy",},
+    {"name":"Test_Block1","order":1,"path":"sprites/Test_Block1/Test_Block1.yy",},
   ],
 }
