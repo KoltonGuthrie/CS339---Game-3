@@ -15,8 +15,8 @@
     "path":"folders/Objects.yy",
   },
   "parentObjectId":{
-    "name":"oStaticParent",
-    "path":"objects/oStaticParent/oStaticParent.yy",
+    "name":"oDynamicParent",
+    "path":"objects/oDynamicParent/oDynamicParent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

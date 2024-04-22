@@ -1,4 +1,4 @@
-if(grappleReady and notGrappled) {
+if(grappleReady and notGrappled and other.id != grapplingPlayer.id) {
 	phy_speed_x = 0;
 	phy_speed_y = 0;
 	x = x;
