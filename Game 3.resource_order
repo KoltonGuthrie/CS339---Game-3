@@ -1,4 +1,6 @@
 {
   "FolderOrderSettings":[],
-  "ResourceOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"oScroller","order":1,"path":"objects/oScroller/oScroller.yy",},
+  ],
 }

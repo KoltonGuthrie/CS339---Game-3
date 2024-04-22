@@ -67,6 +67,7 @@
     {"name":"inst_1FE3C95A","path":"rooms/GrappleTestingRoom/GrappleTestingRoom.yy",},
     {"name":"inst_4F9780C3","path":"rooms/GrappleTestingRoom/GrappleTestingRoom.yy",},
     {"name":"inst_278C1E48","path":"rooms/GrappleTestingRoom/GrappleTestingRoom.yy",},
+    {"name":"inst_5D8DF943","path":"rooms/GrappleTestingRoom/GrappleTestingRoom.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -138,6 +139,7 @@
         {"$GMRInstance":"","%Name":"inst_1FE3C95A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1FE3C95A","objectId":{"name":"oBlock","path":"objects/oBlock/oBlock.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1344.0,"y":5696.0,},
         {"$GMRInstance":"","%Name":"inst_4F9780C3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4F9780C3","objectId":{"name":"oBlock","path":"objects/oBlock/oBlock.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1472.0,"y":5824.0,},
         {"$GMRInstance":"","%Name":"inst_278C1E48","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_278C1E48","objectId":{"name":"oBlock","path":"objects/oBlock/oBlock.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1856.0,"y":6080.0,},
+        {"$GMRInstance":"","%Name":"inst_5D8DF943","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5D8DF943","objectId":{"name":"oScroller","path":"objects/oScroller/oScroller.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":6080.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
   ],
   "name":"GrappleTestingRoom",
