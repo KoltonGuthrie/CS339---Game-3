@@ -23,7 +23,7 @@
   ],
   "name":"sHook",
   "nineSlice":null,
-  "origin":4,
+  "origin":3,
   "parent":{
     "name":"Grapple",
     "path":"folders/Sprites/Grapple.yy",
@@ -75,7 +75,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":16,
+    "xorigin":0,
     "yorigin":16,
   },
   "swatchColours":null,
