@@ -8,7 +8,9 @@
     {"name":"oCredits","order":2,"path":"objects/oCredits/oCredits.yy",},
     {"name":"oScroller","order":1,"path":"objects/oScroller/oScroller.yy",},
     {"name":"Credits","order":1,"path":"rooms/Credits/Credits.yy",},
+    {"name":"Title","order":2,"path":"rooms/Title/Title.yy",},
     {"name":"drawReset","order":1,"path":"scripts/drawReset/drawReset.yy",},
+    {"name":"sButton","order":2,"path":"sprites/sButton/sButton.yy",},
     {"name":"Test_Block1","order":1,"path":"sprites/Test_Block1/Test_Block1.yy",},
   ],
 }
