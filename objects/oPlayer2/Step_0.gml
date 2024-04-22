@@ -50,11 +50,9 @@ if jump and !jumpCooldown and jumpBuffer < 2 {
 	physics_apply_impulse(x,y,0,-65*phy_mass)
 	jumpCooldown = true
 	jumpBuffer += 1
-	if isGrappled {
-		alarm[0] = room_speed*4
-	} else {
-		alarm[0] = room_speed
-	}
+	
+	alarm[0] = room_speed
+	
 }
 
 if(keyboard_check(ord("L")) && !isGrappled) {
