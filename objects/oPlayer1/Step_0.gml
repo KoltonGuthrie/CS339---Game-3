@@ -76,11 +76,26 @@ if(keyboard_check_released(ord("G")) && isGrappleBeingHeld) {
 	hook = instance_create_layer(x,y,"Instances", oHook);
 	with(hook) {
 		
+		x_offset = 0;
+		y_offset = 0;
+		
+		if(other.grappleThrowingRotation < 45) {
+			x_offset = sprite_width * 1.5;
+		} else if(other.grappleThrowingRotation < 135) {
+			y_offset = - sprite_height * 2.5;
+		} else if(other.grappleThrowingRotation < 225) {
+			x_offset = -sprite_width * 1.5;
+		} else if(other.grappleThrowingRotation < 315) {
+			y_offset = sprite_height * 2.5;
+		} else if(other.grappleThrowingRotation < 360) {
+			x_offset = sprite_width * 1.5;
+		}
+		
 		force_x = lengthdir_x(15,other.grappleThrowingRotation);
 		force_y = lengthdir_y(15,other.grappleThrowingRotation);
 		
-		phy_position_x += force_x;
-		phy_position_y += force_y;
+		phy_position_x += force_x + x_offset;
+		phy_position_y += force_y + y_offset;
 
 		phy_speed_x = force_x;
 		phy_speed_y = force_y;

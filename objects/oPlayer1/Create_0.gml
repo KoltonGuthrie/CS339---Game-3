@@ -7,6 +7,8 @@ normalGravity = 1
 //respawnX = x;
 //respawnY = y;
 
+i = 0;
+
 // moving vars
 moveLeft = false
 moveRight = false
