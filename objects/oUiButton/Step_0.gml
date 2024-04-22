@@ -13,7 +13,6 @@ if (mouse_check_button_released(mb_left))
 //After button is clicked, plays a sound and then goes to the next room
 	if (hovering) 
 	{
-		audio_play_sound(snd_button, 1, false);
 		room_goto_next();
 	}
 } 

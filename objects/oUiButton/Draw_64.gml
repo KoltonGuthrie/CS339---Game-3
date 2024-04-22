@@ -1,8 +1,6 @@
 //Drawing the start button to the screen and setting the font, align and color and which one.
 draw_self();
 
-draw_set_font(fnt_button);
-
 draw_set_halign(fa_center);
 
 draw_set_valign(fa_middle);
