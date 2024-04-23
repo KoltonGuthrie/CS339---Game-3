@@ -6,6 +6,7 @@
   "ResourceOrderSettings":[
     {"name":"fn_menu","order":2,"path":"fonts/fn_menu/fn_menu.yy",},
     {"name":"fn_Ubuntu_small","order":1,"path":"fonts/fn_Ubuntu_small/fn_Ubuntu_small.yy",},
+    {"name":"oMusic","order":4,"path":"objects/oMusic/oMusic.yy",},
     {"name":"oCredits","order":2,"path":"objects/oCredits/oCredits.yy",},
     {"name":"oScroller","order":1,"path":"objects/oScroller/oScroller.yy",},
     {"name":"Credits","order":1,"path":"rooms/Credits/Credits.yy",},

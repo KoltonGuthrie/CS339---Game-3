@@ -45,6 +45,7 @@
     {"id":{"name":"fn_menu","path":"fonts/fn_menu/fn_menu.yy",},},
     {"id":{"name":"fn_Ubuntu_small","path":"fonts/fn_Ubuntu_small/fn_Ubuntu_small.yy",},},
     {"id":{"name":"fn_Ubuntu","path":"fonts/fn_Ubuntu/fn_Ubuntu.yy",},},
+    {"id":{"name":"oMusic","path":"objects/oMusic/oMusic.yy",},},
     {"id":{"name":"oBlock","path":"objects/oBlock/oBlock.yy",},},
     {"id":{"name":"oBlockEarth","path":"objects/oBlockEarth/oBlockEarth.yy",},},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},},
