@@ -1,5 +1,6 @@
 {
   "FolderOrderSettings":[
+    {"name":"group1","order":3,"path":"folders/Objects/group1.yy",},
     {"name":"Scripts","order":1,"path":"folders/Scripts.yy",},
   ],
   "ResourceOrderSettings":[
@@ -10,6 +11,8 @@
     {"name":"Credits","order":1,"path":"rooms/Credits/Credits.yy",},
     {"name":"Title","order":2,"path":"rooms/Title/Title.yy",},
     {"name":"drawReset","order":1,"path":"scripts/drawReset/drawReset.yy",},
+    {"name":"ongoingBackgroundMusic","order":1,"path":"sounds/ongoingBackgroundMusic/ongoingBackgroundMusic.yy",},
+    {"name":"ouchSound","order":1,"path":"sounds/ouchSound/ouchSound.yy",},
     {"name":"sButton","order":2,"path":"sprites/sButton/sButton.yy",},
     {"name":"sPlayer1Jumping","order":1,"path":"sprites/sPlayer1Jumping/sPlayer1Jumping.yy",},
     {"name":"sPlayer2Jumping","order":2,"path":"sprites/sPlayer2Jumping/sPlayer2Jumping.yy",},
