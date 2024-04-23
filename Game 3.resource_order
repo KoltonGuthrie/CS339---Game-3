@@ -13,6 +13,7 @@
     {"name":"sButton","order":2,"path":"sprites/sButton/sButton.yy",},
     {"name":"sPlayer1Jumping","order":1,"path":"sprites/sPlayer1Jumping/sPlayer1Jumping.yy",},
     {"name":"sPlayer2Jumping","order":2,"path":"sprites/sPlayer2Jumping/sPlayer2Jumping.yy",},
+    {"name":"sTitlePage","order":3,"path":"sprites/sTitlePage/sTitlePage.yy",},
     {"name":"Test_Block1","order":1,"path":"sprites/Test_Block1/Test_Block1.yy",},
   ],
 }
