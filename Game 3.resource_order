@@ -11,6 +11,8 @@
     {"name":"Title","order":2,"path":"rooms/Title/Title.yy",},
     {"name":"drawReset","order":1,"path":"scripts/drawReset/drawReset.yy",},
     {"name":"sButton","order":2,"path":"sprites/sButton/sButton.yy",},
+    {"name":"sPlayer1Jumping","order":1,"path":"sprites/sPlayer1Jumping/sPlayer1Jumping.yy",},
+    {"name":"sPlayer2Jumping","order":2,"path":"sprites/sPlayer2Jumping/sPlayer2Jumping.yy",},
     {"name":"Test_Block1","order":1,"path":"sprites/Test_Block1/Test_Block1.yy",},
   ],
 }
