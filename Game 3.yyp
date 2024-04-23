@@ -63,7 +63,7 @@
     {"id":{"name":"oUiButton","path":"objects/oUiButton/oUiButton.yy",},},
     {"id":{"name":"oWheel","path":"objects/oWheel/oWheel.yy",},},
     {"id":{"name":"Credits","path":"rooms/Credits/Credits.yy",},},
-    {"id":{"name":"GrappleTestingRoom","path":"rooms/GrappleTestingRoom/GrappleTestingRoom.yy",},},
+    {"id":{"name":"MainRoom","path":"rooms/MainRoom/MainRoom.yy",},},
     {"id":{"name":"NewGrappleTestingRoom","path":"rooms/NewGrappleTestingRoom/NewGrappleTestingRoom.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Title","path":"rooms/Title/Title.yy",},},
@@ -104,7 +104,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Title","path":"rooms/Title/Title.yy",},},
-    {"roomId":{"name":"GrappleTestingRoom","path":"rooms/GrappleTestingRoom/GrappleTestingRoom.yy",},},
+    {"roomId":{"name":"MainRoom","path":"rooms/MainRoom/MainRoom.yy",},},
     {"roomId":{"name":"Credits","path":"rooms/Credits/Credits.yy",},},
     {"roomId":{"name":"NewGrappleTestingRoom","path":"rooms/NewGrappleTestingRoom/NewGrappleTestingRoom.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},

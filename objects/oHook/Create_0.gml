@@ -26,4 +26,4 @@ isChainDone = false;
 
 grappleReady = false;
 notGrappled = true;
-alarm[0] = 0.25*room_speed;
+alarm[0] = 0.1*room_speed;
