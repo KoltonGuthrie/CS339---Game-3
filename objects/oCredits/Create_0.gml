@@ -7,7 +7,9 @@ subheader_extra_padding = 2;
 body_extra_padding = 1.5;
 
 text = [
-	{"type": "header", "text": "[NAME OF GAME]"},
+	{"type": "subheader", "text": Score_Keeper.victoryHeader},
+	{"type": "body", "text": Score_Keeper.victoryBody},
+	{"type": "header", "text": "Rage Cave"},
 	{"type": "header", "text": "Credits"},
 	{"type": "subheader", "text": "Sounds"},
 	{"type": "body", "text": "..."},
