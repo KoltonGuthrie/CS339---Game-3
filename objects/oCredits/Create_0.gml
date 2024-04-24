@@ -12,17 +12,9 @@ text = [
 	{"type": "header", "text": "Rage Cave"},
 	{"type": "header", "text": "Credits"},
 	{"type": "subheader", "text": "Sounds"},
-	{"type": "body", "text": "..."},
-	{"type": "body", "text": "..."},
-	{"type": "body", "text": "..."},
-	{"type": "body", "text": "..."},
-	{"type": "body", "text": "..."},
-	{"type": "subheader", "text": "Code"},
-	{"type": "body", "text": "..."},
-	{"type": "body", "text": "..."},
-	{"type": "body", "text": "..."},
-	{"type": "body", "text": "..."},
-	{"type": "body", "text": "..."},
+	{"type": "body", "text": "GrappleThrow: https://pixabay.com/sound-effects/movement-swipe-whoosh-3-186577/"},
+	{"type": "body", "text": "GrappleAttach: https://pixabay.com/sound-effects/grappling-hook-14680/"},
+	{"type": "body", "text": "Ambience: "},
 ]
 
 height = 0;
