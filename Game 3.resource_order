@@ -8,6 +8,8 @@
     {"name":"fn_Ubuntu_small","order":1,"path":"fonts/fn_Ubuntu_small/fn_Ubuntu_small.yy",},
     {"name":"oMusic","order":4,"path":"objects/oMusic/oMusic.yy",},
     {"name":"oCredits","order":2,"path":"objects/oCredits/oCredits.yy",},
+    {"name":"oGrappleDirection","order":1,"path":"objects/oGrappleDirection/oGrappleDirection.yy",},
+    {"name":"oHook","order":2,"path":"objects/oHook/oHook.yy",},
     {"name":"oScroller","order":1,"path":"objects/oScroller/oScroller.yy",},
     {"name":"Credits","order":1,"path":"rooms/Credits/Credits.yy",},
     {"name":"Title","order":2,"path":"rooms/Title/Title.yy",},
