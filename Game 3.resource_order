@@ -8,7 +8,12 @@
     {"name":"fn_Ubuntu_small","order":1,"path":"fonts/fn_Ubuntu_small/fn_Ubuntu_small.yy",},
     {"name":"oCoin","order":1,"path":"objects/oCoin/oCoin.yy",},
     {"name":"oCredits","order":2,"path":"objects/oCredits/oCredits.yy",},
+<<<<<<< HEAD
     {"name":"oMusic","order":4,"path":"objects/oMusic/oMusic.yy",},
+=======
+    {"name":"oGrappleDirection","order":1,"path":"objects/oGrappleDirection/oGrappleDirection.yy",},
+    {"name":"oHook","order":2,"path":"objects/oHook/oHook.yy",},
+>>>>>>> fbd69b025d7c5aa125bda7518a73802f455f0d8a
     {"name":"oScroller","order":1,"path":"objects/oScroller/oScroller.yy",},
     {"name":"Score_Keeper","order":5,"path":"objects/Score_Keeper/Score_Keeper.yy",},
     {"name":"Credits","order":1,"path":"rooms/Credits/Credits.yy",},
