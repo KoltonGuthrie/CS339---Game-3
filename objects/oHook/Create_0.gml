@@ -18,7 +18,7 @@ chainSpeed = speed
 chainX = x
 chainY = y
 chainCounter = 0
-
+audio_play_sound(GrappleThrow,1,false)
 startModX = x%16
 grapplingPlayer = pointer_null;
 

@@ -19,4 +19,6 @@ if(grappleReady and notGrappled and other.id != grapplingPlayer.id) {
 
 	physics_joint_weld_create(self, other, connectToX, connectToY, 0, -1, 0, false);
 	notGrappled = false;
+	
+	audio_play_sound(GrappleAttach,4,false)
 }
